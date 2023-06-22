@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #ffffff, #f9ccad);
+    overflow-x:hidden;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: #4543b7;
+}
+.icon_mail {
+    position: relative;
+    top: 10px;
+    right: 15px;
+    user-select: none;
+}
+.icon_user {
+    position: relative;
+    top: 9px;
+    width: 50px;
+    user-select: none;
+}
+.cht-lnk {
+    text-decoration: none;
+    color: #4543b7;
+    font-size: 18px;
+    user-select: none;
+}
+.chat-title {
+    margin-top: 30px;
+}
+.send {
+    display: inline-block;
+    width: 350px;
+}
+#name_send {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding: 5px 11px;
+    background: linear-gradient(to right, #f5f1f1, #e7dcd5);
+    font-size: 16px;
+}
+#message_send {
+    margin-left: 21px;
+    margin-bottom: 10px;
+    padding: 5px 11px;
+    background: linear-gradient(to right, #f5f1f1, #e7dcd5);
+    font-size: 16px;
+}
+#btn_send {
+    background: linear-gradient(to right, #3498DB, #8abb95);
+    padding: 10px 25px;
+    border: 2px solid #4543b7;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+/*Chat interface*/
+
+.mess {
+    border: 2px solid #4543b7;
+    border-radius: 5px;
+    border-left: none;
+    border-bottom: none;
+    width: 600px;
+    box-shadow: 4px 6px 13px -2px black;
+    position: relative;
+}
+.mess::before {
+    content: '';
+    border: 11px solid transparent;
+    border-right: 28px solid #3498DB;
+    position: absolute;
+    left: -39px;
+    top: 9.5rem;
+    margin-top: -10px;
+}
+
+
+
+
+.mes-info {
+    color: white;
+    background: linear-gradient(to right, #3498DB, #8abb95);
+    font-size: 18px;
+    padding: 10px 25px;
+}
+.mes-data {
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+.date_mess {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.mes-text {
+    margin-top: 25px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+.new_message {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
